@@ -1,5 +1,6 @@
-const text = require('./textResponses.js');
+const text = require('./textResponses.js'); // import our file
 
+// our hello message will be a JSON 0bject
 const getHelloJSON = (request, response) => {
   const helloJSON = {
     message: text.hello,
@@ -11,6 +12,7 @@ const getHelloJSON = (request, response) => {
   response.end();
 };
 
+// our time will be a JSON object  
 const getTimeJSON = (request, response) => {
   const timeJSON = {
     time: text.getTimeString(),
@@ -23,5 +25,6 @@ const getTimeJSON = (request, response) => {
   response.end();
 };
 
+// export both functions 
 module.exports.getHelloJSON = getHelloJSON;
 module.exports.getTimeJSON = getTimeJSON;
