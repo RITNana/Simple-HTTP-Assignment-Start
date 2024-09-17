@@ -46,7 +46,7 @@ const getJsonFetch = async (url, callback) => {
 const btnHello = document.querySelector("#btn-hello");
 const outputHello = document.querySelector("#output-hello");
 
-const helloJSONURL = "http://localhost:3000/helloJSON";
+const helloJSONURL = "/helloJSON";
 const helloCallback = json => {
   outputHello.innerHTML = json.message || "No <kbd>.message</kbd> value found!";
 };
