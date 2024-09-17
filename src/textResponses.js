@@ -1,9 +1,9 @@
 const hello = 'Hello World!';
 
-// create a time string 
+// create a time string
 const getTimeString = () => {
   const d = new Date();
-  const dateString = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`; 
+  const dateString = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
   return dateString;
 };
 
@@ -21,7 +21,7 @@ const getHello = (request, response) => {
   response.end();
 };
 
-// export our message with the hello message and our functions for the time 
+// export our message with the hello message and our functions for the time
 module.exports = {
   hello,
   getTimeString,

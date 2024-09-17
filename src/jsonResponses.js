@@ -12,7 +12,7 @@ const getHelloJSON = (request, response) => {
   response.end();
 };
 
-// our time will be a JSON object  
+// our time will be a JSON object
 const getTimeJSON = (request, response) => {
   const timeJSON = {
     time: text.getTimeString(),
@@ -25,6 +25,6 @@ const getTimeJSON = (request, response) => {
   response.end();
 };
 
-// export both functions 
+// export both functions
 module.exports.getHelloJSON = getHelloJSON;
 module.exports.getTimeJSON = getTimeJSON;

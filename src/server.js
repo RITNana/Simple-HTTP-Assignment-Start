@@ -34,8 +34,12 @@ const onRequest = (request, response) => {
       jsonHandler.getTimeJSON(request, response);
       break;
 
-    case '/dankmemes':
+    case '/dankmemes.png':
       imageHandler.getImage(request, response);
+      break;
+
+    case '/rich-client.html':
+      htmlHandler.getRichClient(request, response);
       break;
 
     default:
