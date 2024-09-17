@@ -16,4 +16,4 @@ const getPage2 = (request, response) => {
 };
 
 module.exports.getIndex = getIndex;
-module.exports.getPage2 = getPage2;
+module.exports.getPage2 = getPage2; 
