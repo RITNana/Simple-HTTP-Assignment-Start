@@ -20,7 +20,7 @@ const getTimeJSON = (request, response) => {
 
   const stringMessage = JSON.stringify(timeJSON);
 
-  response.writeHead(200, { 'Content-Type': 'application/json ' });
+  response.writeHead(200, { 'Content-Type': 'application/json' });
   response.write(stringMessage);
   response.end();
 };
